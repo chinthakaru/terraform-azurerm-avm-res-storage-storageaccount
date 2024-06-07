@@ -1,5 +1,9 @@
 terraform {
   required_version = ">= 1.0.0"
+  backend "azurerm" {
+    key = "github.terraform.tfstate"
+
+  }
 
   required_providers {
     azurerm = {
